@@ -9,7 +9,7 @@ Installation
 
 <pre>
   <code>
-    cordova plugin add https://github.com/mrameezraja/cordova-plugin-so-motion
+    cordova plugin add https://github.com/mrameezraja/cordova-plugin-so-motion-detector
   </code>
 </pre>
 
