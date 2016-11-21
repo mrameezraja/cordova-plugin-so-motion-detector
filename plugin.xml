@@ -26,15 +26,15 @@
             </feature>
         </config-file>
 
-        <header-file src="src/ios/CDVSOMotionDetecter.h"/>
-        <source-file src="src/ios/CDVSOMotionDetecter.m"/>
+        <header-file src="src/ios/CDVSOMotionDetector.h"/>
+        <source-file src="src/ios/CDVSOMotionDetector.m"/>
 
-        <header-file src="src/ios/SOMotionDetecter/SOLocationManager.h"/>
-        <source-file src="src/ios/SOMotionDetecter/SOLocationManager.m"/>
-        <header-file src="src/ios/SOMotionDetecter/SOMotionDetector.h"/>
-        <source-file src="src/ios/SOMotionDetecter/SOMotionDetector.m"/>
-        <header-file src="src/ios/SOMotionDetecter/SOStepDetector.h"/>
-        <source-file src="src/ios/SOMotionDetecter/SOStepDetector.m"/>
+        <header-file src="src/ios/SOMotionDetector/SOLocationManager.h"/>
+        <source-file src="src/ios/SOMotionDetector/SOLocationManager.m"/>
+        <header-file src="src/ios/SOMotionDetector/SOMotionDetector.h"/>
+        <source-file src="src/ios/SOMotionDetector/SOMotionDetector.m"/>
+        <header-file src="src/ios/SOMotionDetector/SOStepDetector.h"/>
+        <source-file src="src/ios/SOMotionDetector/SOStepDetector.m"/>
 
         <framework src="CoreMotion.framework"/>
         <framework src="CoreLocation.framework"/>
