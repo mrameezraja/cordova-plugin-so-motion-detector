@@ -4,7 +4,7 @@ var SOMotionDetector = function() { }
 
 SOMotionDetector.prototype = {
   requestUpdates: function(success, error, options){
-    exec(success, error, "CDVSOMotionDetecter", "start", [])
+    exec(success, error, "CDVSOMotionDetector", "start", [])
   },
   stop: function(success, error, options){
     if(!success)
@@ -13,7 +13,7 @@ SOMotionDetector.prototype = {
     if(!error)
       error = function(){ }
 
-    exec(success, error, "CDVSOMotionDetecter", "stop", [])
+    exec(success, error, "CDVSOMotionDetector", "stop", [])
   }
 }
 

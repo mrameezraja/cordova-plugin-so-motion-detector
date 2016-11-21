@@ -2,7 +2,7 @@
 
 #import <Cordova/CDVPlugin.h>
 
-@interface CDVSOMotionDetecter : CDVPlugin
+@interface CDVSOMotionDetector : CDVPlugin
 
 - (void)start:(CDVInvokedUrlCommand*)command;
 - (void)stop:(CDVInvokedUrlCommand*)command;

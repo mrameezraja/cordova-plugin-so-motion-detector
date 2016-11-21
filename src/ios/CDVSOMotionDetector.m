@@ -1,15 +1,15 @@
-#import "CDVSOMotionDetecter.h"
+#import "CDVSOMotionDetector.h"
 #import <Cordova/CDV.h>
 #import "SOMotionDetector.h"
 #import "SOStepDetector.h"
 
-@interface CDVSOMotionDetecter ()
+@interface CDVSOMotionDetector ()
 {
     int stepCount;
 }
 @end
 
-@implementation CDVSOMotionDetecter
+@implementation CDVSOMotionDetector
 
 #define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
 #define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
