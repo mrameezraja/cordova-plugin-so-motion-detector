@@ -13,16 +13,11 @@
         <engine name="cordova" version=">=3.0.0" />
     </engines>
 
-    <!-- android -->
-    <platform name="android">
-
-    </platform>
-
     <!-- ios -->
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
-            <feature name="CDVSOMotionDetecter">
-                <param name="ios-package" value="CDVSOMotionDetecter"/>
+            <feature name="CDVSOMotionDetector">
+                <param name="ios-package" value="CDVSOMotionDetector"/>
             </feature>
         </config-file>
 
