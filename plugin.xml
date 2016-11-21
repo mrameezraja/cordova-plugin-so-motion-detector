@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-so-motion" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cordova-plugin-so-motion</name>
+    <description>A Cordova plugin that uses accelerometer values to detect motion</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova, motion detection</keywords>
+
+    <js-module name="soMotionDetector" src="www/so-motion-detector.js">
+        <clobbers target="cordova.plugins.soMotionDetector" />
+    </js-module>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <!-- android -->
+    <platform name="android">
+
+    </platform>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="CDVSOMotionDetecter">
+                <param name="ios-package" value="CDVSOMotionDetecter"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/CDVSOMotionDetecter.h"/>
+        <source-file src="src/ios/CDVSOMotionDetecter.m"/>
+
+        <header-file src="src/ios/SOMotionDetecter/SOLocationManager.h"/>
+        <source-file src="src/ios/SOMotionDetecter/SOLocationManager.m"/>
+        <header-file src="src/ios/SOMotionDetecter/SOMotionDetector.h"/>
+        <source-file src="src/ios/SOMotionDetecter/SOMotionDetector.m"/>
+        <header-file src="src/ios/SOMotionDetecter/SOStepDetector.h"/>
+        <source-file src="src/ios/SOMotionDetecter/SOStepDetector.m"/>
+
+        <framework src="CoreMotion.framework"/>
+        <framework src="CoreLocation.framework"/>
+    </platform>
+
+</plugin>
