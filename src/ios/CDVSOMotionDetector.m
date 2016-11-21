@@ -21,7 +21,7 @@
 - (void)start:(CDVInvokedUrlCommand*)command
 {
     [self.commandDelegate runInBackground:^{
-        NSMutableDictionary *options = [command argumentAtIndex:0];
+        //NSMutableDictionary *options = [command argumentAtIndex:0];
         [SOMotionDetector sharedInstance].motionTypeChangedBlock = ^(SOMotionType motionType) {
             NSString *type = @"";
             switch (motionType) {
@@ -65,7 +65,7 @@
         [[SOMotionDetector sharedInstance] startDetection];
         
         //Starting pedometer
-        [[SOStepDetector sharedInstance] startDetectionWithUpdateBlock:^(NSError *error) {
+        /*[[SOStepDetector sharedInstance] startDetectionWithUpdateBlock:^(NSError *error) {
             if (error) {
                 NSLog(@"%@", error.localizedDescription);
                 return;
@@ -73,7 +73,7 @@
             
             stepCount++;
             //[NSString stringWithFormat:@"Step count: %d", stepCount];
-        }];
+        }];*/
     }];
 }
 
