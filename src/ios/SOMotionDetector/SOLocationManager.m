@@ -34,8 +34,9 @@
 + (SOLocationManager *)sharedInstance
 {
     __strong static SOLocationManager* instance = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
+    //static dispatch_once_t onceToken;
+    //dispatch_once(&onceToken, ^{
+    dispatch_async(dispatch_get_main_queue(), ^{
         instance = [[self alloc] init];
     });
     
